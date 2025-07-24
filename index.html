@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wild Life</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CINEMATIC HERO SECTION -->
+  <section class="cinematic-hero">
+    
+  <!-- First bird: Left to Right -->
+<img src="assets/vecteezy-a-flying-bird-on-gree-unscreen.gif" class="flying-bird bird1" />
+
+<!-- Second bird: Right to Left (wrapped for clean transform) -->
+<div class="bird2-wrapper">
+  <img src="assets/vecteezy-a-flying-bird-on-gree-unscreen.gif" class="bird2" />
+</div>
+
+    <!-- Hero Text behind the tree image -->
+    <div class="overlay-text back-text">
+      <h2>THE WILD <span class="life-highlight">LIFE</span></h2>
+      <p>Capturing nature <span>with my Camera Lens</span></p>
+    </div>
+
+    <!-- Foreground tree image to create layered overlap -->
+    <img src="assets/tree_foreground.png" alt="Tree Foreground" class="foreground-tree" />
+  </section>
+
+  <!-- FILTER + GALLERY SECTION -->
+  <section id="gallery-section">
+    <div class="filter-buttons">
+      <button onclick="filterMedia('image')">Images</button>
+      <button onclick="filterMedia('video')">Videos</button>
+    </div>
+    <div id="gallery" class="gallery"></div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close-btn" onclick="closeLightbox()">×</span>
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
