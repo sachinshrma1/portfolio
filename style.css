@@ -52,7 +52,7 @@ body, html {
 .bird1 {
   top: 30%;
   left: -25%;
-  animation: flyBird1 35s linear infinite;
+  animation: flyBird1 32s linear infinite;
 }
 
 @keyframes flyBird1 {
@@ -66,7 +66,7 @@ body, html {
   top: 45%;
   left: 100vw;
   z-index: 1;
-  animation: flyBird2 60s linear infinite;
+  animation: flyBird2 35s linear infinite;
   pointer-events: none;
 }
 
