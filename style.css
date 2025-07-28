@@ -256,47 +256,56 @@ body, html {
 }
 
 /* RESPONSIVE */
+/* ---------- IMPROVED MOBILE STYLES ---------- */
 @media (max-width: 768px) {
+  .cinematic-hero {
+    height: 85vh;
+    padding: 0 10px;
+    background-position: center center;
+    background-size: cover;
+  }
+
   .overlay-text.back-text h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    word-break: break-word;
   }
 
   .overlay-text.back-text p {
     font-size: 1rem;
+    margin-top: 0.8rem;
   }
 
-  .foreground-tree {
-    height: 100vh;
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
   .filter-buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 12px;
+    margin: 20px auto;
   }
 
   .filter-buttons button {
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
+    padding: 10px;
   }
 
   .gallery {
     flex-direction: column;
     align-items: center;
-    padding: 0 10px 40px 10px;
+    gap: 20px;
+    padding: 0 12px 40px 12px;
   }
 
   .media-card {
     width: 100%;
     max-width: 100%;
+    border-radius: 12px;
   }
 
   .media-card img,
   .media-card video {
+    width: 100%;
     height: auto;
     max-height: 300px;
     object-fit: contain;
@@ -306,12 +315,17 @@ body, html {
   .lightbox-content video {
     max-width: 95%;
     max-height: 80vh;
+    object-fit: contain;
   }
 
   .close-btn {
-    top: 15px;
-    right: 20px;
-    font-size: 2.5rem;
+    top: 10px;
+    right: 16px;
+    font-size: 2.4rem;
+  }
+
+  .foreground-tree {
+    height: 100vh;
+    width: 100%;
   }
 }
-
